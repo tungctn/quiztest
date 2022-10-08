@@ -2,10 +2,9 @@
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 
-class Course extends Migration
+class Test extends Migration
 {
     /**
      * Run the migrations.
@@ -14,11 +13,7 @@ class Course extends Migration
      */
     public function up()
     {
-        Schema::create('course', function (Blueprint $table) {
-            $table->id();
-            $table->string('course_name');
-            $table->timestamps();
-        });
+        
     }
 
     /**
@@ -28,6 +23,6 @@ class Course extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('course');
+        Schema::dropIfExists('test');
     }
 }

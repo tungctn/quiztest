@@ -43,7 +43,8 @@ class AuthController extends Controller
         return response()->json([
             "status" => 0,
             "msg" => "Acerca del perfil de usuario",
-            "user" => $user
+            "user" => $user,
+            "id" => auth()->user()->id,
         ]);
     }
 

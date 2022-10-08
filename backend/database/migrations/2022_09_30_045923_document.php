@@ -15,17 +15,17 @@ class Document extends Migration
     {
         Schema::create('document', function (Blueprint $table) {
             $table->id();
-            $table->string('Question');
+            $table->string('question')->unique();
             $table->string('A');
             $table->string('B');
             $table->string('C');
             $table->string('D');
-            $table->enum('Answer', ['A', 'B', 'C', 'D']);
+            $table->enum('answer', ['A', 'B', 'C', 'D']);
             $table->unsignedBigInteger('memberId');
             $table->foreign('memberId')->references('id')->on('member')->onDelete('cascade');
             $table->unsignedBigInteger('courseId');
             $table->foreign('courseId')->references('id')->on('course')->onDelete('cascade');
-            $table->enum('level',[1,2,3,4]);
+            $table->enum('level', [1, 2, 3, 4]);
             $table->timestamps();
         });
     }
