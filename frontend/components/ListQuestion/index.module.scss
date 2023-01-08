@@ -1,0 +1,124 @@
+#question {
+    height: 150px;
+    border-radius: 15px;
+    background-color: purple;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    border: purple;
+
+    &:hover {
+        border: 2px solid #9b59b6;
+        background-color: #9b59b6;
+    }
+
+    &:focus {
+        border: 2px solid #9b59b6;
+        background-color: #9b59b6;
+        // background-color: MediumSeaGreen;
+    }
+}
+
+#anwser1 {
+    height: 150px;
+    border-radius: 15px;
+    background-color: #3498db !important;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    border: purple;
+
+    &:hover {
+        border: 2px solid #9b59b6;
+        background-color: #2980b9 !important;
+    }
+
+    &:focus {
+        border: 2px solid #9b59b6;
+        background-color: #2980b9 !important;
+    }
+}
+
+#anwser2 {
+    height: 150px;
+    border-radius: 15px;
+    background-color: #1abc9c !important;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    border: purple;
+
+    &:hover {
+        border: 2px solid #1abc9c !important;
+        background-color: #16a085 !important;
+    }
+
+    &:focus {
+        border: 2px solid #9b59b6;
+        background-color: #16a085 !important;
+    }
+}
+
+#anwser3 {
+    height: 150px;
+    border-radius: 15px;
+    background-color: #f1c40f !important;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    border: purple;
+
+    &:hover {
+        border: 2px solid #f1c40f;
+        background-color: #f39c12 !important;
+    }
+
+    &:focus {
+        border: 2px solid #9b59b6;
+        background-color: #f39c12 !important;
+        // opacity: 1.5;
+        // background-color: MediumSeaGreen;
+    }
+}
+
+#anwser4 {
+    height: 150px;
+    border-radius: 15px;
+    background-color: #e74c3c !important;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    border: purple;
+
+    &:hover {
+        border: 2px solid #e74c3c;
+        background-color: #c0392b !important;
+    }
+
+    &:focus {
+        border: 2px solid #9b59b6;
+        background-color: #c0392b !important;
+        // opacity: 1.5;
+        // background-color: MediumSeaGreen;
+    }
+}
+
+#select_anwser {
+    .ant-col-5 {
+        display: flex;
+    }
+
+    .ant-radio-button-wrapper {
+        margin: 0 auto;
+    }
+}
+
+.col1 {
+    width: 1/18*100%;
+    float: left;
+}
+
+.col5 {
+    width: 5/24*100%;
+    float: left;
+}
