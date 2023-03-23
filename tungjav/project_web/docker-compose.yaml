@@ -1,0 +1,21 @@
+version: "3.8"
+services:
+  server:
+    build: ./server
+    ports:
+      - "8001:8001"
+    volumes:
+      - ./server:/app
+
+  client:
+    build: ./client
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./client/src:/app/src
+    stdin_open: true
+    tty: true
+    depends_on:
+      - server
+volumes:
+  data: 
